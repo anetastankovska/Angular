@@ -1,4 +1,4 @@
-import { Component} from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 @Component({
@@ -10,9 +10,11 @@ import { FormsModule } from '@angular/forms';
 
 export class AppComponent {
   title = 'playground';
+  name = "Aneta";
 }
 
-export class ServerComponent{  
-  serverID: number = 10;  
-  serverStatus: string = 'Online';  
-}  
+
+// export class ServerClass{  
+//   serverID: number = 10;  
+//   serverStatus: string = 'Online';  
+// }  

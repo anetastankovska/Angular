@@ -8,7 +8,7 @@ import { BrowserAnimationsModule } from
     '@angular/platform-browser/animations';
   
 @Component({  
-  selector: 'app-',  
+  selector: 'app-route',  
   templateUrl: './server2.component.html',  
   styleUrls: ['./server2.component.css']  
 }) 
