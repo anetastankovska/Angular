@@ -1,8 +1,25 @@
-<p>  
-       Server2 is also working fine.  
-     </p>  
+<p>Server2 is also working fine.</p>  
+
      <button class="btn btn-primary"  
              [disabled]="!allowNewServer" >Add Server</button>  
      <!--<h3 [innerText]= "allowNewServer"></h3>-->  
        
      {{serverCreationStatus}}  
+
+     <ul *ngFor="let name of names" >
+        <li>{{name}}</li>
+     </ul>
+
+     <div *ngFor="let color of colors">
+        <p *ngIf="color == 'Red'">{{color}}</p>
+     </div>
+
+     <ul *ngFor="let person of testObjects | keyvalue">
+        <li>{{person.value.firstName}}</li>
+        <li>{{person.value.lastName}}</li>
+        <li>{{person.value.age}}</li>
+        <p>Favorite colors</p>
+        <ol><li *ngFor="let color of person.value.favoriteColors">{{color}}</li></ol>
+        </ul>
+
+        

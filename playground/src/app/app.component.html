@@ -11,7 +11,7 @@
       <b>{{title | lowercase}}</b>  
       <h3>Currency Pipe</h3>  
       <b>{{6589.23 | currency:"USD"}}</b><br/>  
-      <b>{{6589.23 | currency:"USD":true}}</b> //Boolean true is used to get the sign of the currency.  
+      <b>{{6589.23 | currency:"USD":"symbol"}}</b> //Boolean true is used to get the sign of the currency.  
       <h3>Date pipe</h3>  
       <b>{{todaydate | date:'d/M/y'}}</b><br/>  
       <b>{{todaydate | date:'shortTime'}}</b>  
@@ -36,6 +36,9 @@
 <!-- <p>{{testProperty}}</p> -->
 
 
-
-
 <app-name-editor></app-name-editor>  
+
+
+<app-server2>
+    <h2>This is a html file generated from the server component</h2>
+</app-server2>

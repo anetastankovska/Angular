@@ -17,7 +17,15 @@ import { BrowserAnimationsModule } from
 export class Server2Component implements OnInit {  
   testProperty = "Test";
   allowNewServer = false;  
-  serverCreationStatus= 'No Server is created.';  
+  serverCreationStatus= 'No Server is created.'; 
+  names = ["Server1", "Server2", "Server3", "Server4", "Server5"]; 
+  colors = ["Red", "Blue", "Black", "Green", "Pink"];
+  testObjects = {person: {
+    firstName : "Aneta",
+    lastName: "Stankovska",
+    age: 31,
+    favoriteColors : ["Black", "White"]
+  }}
    constructor() {  
      setTimeout(() =>{  
        this.allowNewServer = true;  
@@ -25,7 +33,10 @@ export class Server2Component implements OnInit {
    }  
    
    ngOnInit() {  
-   }  
+   } 
    
- }  
+    
+   }
+   
+   
  
