@@ -1,3 +1,41 @@
-<h1>Hello</h1>
+<h2>Hello</h2>
 
-<p>Welcome from the app component {{title}}. The creator's name is {{name}}</p>
+<p>Welcome from the app component {{title | uppercase}}. The creator's name is {{firstName}}</p>
+
+<h2>Pipes examples</h2>
+<div style = "width:100%;">  
+    <div style = "width:40%;float:left;border:solid 1px black;">  
+      <h3>Uppercase Pipe</h3>  
+      <b>{{title | uppercase}}</b><br/>  
+      <h3>Lowercase Pipe</h3>  
+      <b>{{title | lowercase}}</b>  
+      <h3>Currency Pipe</h3>  
+      <b>{{6589.23 | currency:"USD"}}</b><br/>  
+      <b>{{6589.23 | currency:"USD":true}}</b> //Boolean true is used to get the sign of the currency.  
+      <h3>Date pipe</h3>  
+      <b>{{todaydate | date:'d/M/y'}}</b><br/>  
+      <b>{{todaydate | date:'shortTime'}}</b>  
+      <h3>Decimal Pipe</h3>  
+      <b>{{ 454.78787814 | number: '3.4-4' }}</b> // 3 is for main integer, 4 -4 are for integers to be displayed.  
+    </div>  
+    <div style = "width:40%;float:left;border:solid 1px black;">  
+      <h3>Json Pipe</h3>  
+      <b>{{ jsonval | json }}</b>  
+      <h3>Percent Pipe</h3>  
+      <b>{{00.54565 | percent}}</b>  
+      <h3>Slice Pipe</h3>  
+      <b>{{months | slice:2:6}}</b>  
+      // here 2 and 6 refers to the start and the end index  
+    </div>  
+  </div>   
+
+  <h1>Example of Custom Pipe</h1>  
+<h2>Square root of 625 is: {{625 | sqrt}}</h2><br/>  
+<h2>Square root of 169 is: {{169 | sqrt}}</h2>   
+
+<!-- <p>{{testProperty}}</p> -->
+
+
+
+
+<app-name-editor></app-name-editor>  

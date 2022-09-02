@@ -1,17 +1,8 @@
 <p>  
-    Server2 is also working fine.  
-  </p>  
-    
-  <label>Server Name</label>  
-  <input type="text"  
-         class="form-control"  
-         (input)="OnUpdateServerName($event)">-->  
-  <input type="text"  
-         class="form-control"  
-  [(ngModel)]="serverName">  
-  <p>{{serverName}}</p>  
-  <button  
-    class="btn btn-primary"  
-    [disabled]="allowNewServer"  
-    (click)="onCreateServer()">Add Server</button>  
-  <p *ngIf="serverCreated"> Server is created. Server name is {{serverName}}</p>  
+       Server2 is also working fine.  
+     </p>  
+     <button class="btn btn-primary"  
+             [disabled]="!allowNewServer" >Add Server</button>  
+     <!--<h3 [innerText]= "allowNewServer"></h3>-->  
+       
+     {{serverCreationStatus}}  
