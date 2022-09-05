@@ -1,0 +1,10 @@
+<div class="form-group">
+    <label for="name">Name</label>
+    <input type="text">
+    <label for="alter-ego">Alter Ego</label>
+    <input type="text">
+    <label for="power">Hero Power</label>
+    <select class="form-control" id="power" required>
+        <option *ngFor="let pow of powers" [value]="pow">{{pow}}</option>
+    </select>
+</div>
