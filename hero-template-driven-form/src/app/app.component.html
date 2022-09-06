@@ -1,1 +1,11 @@
-<app-hero-form></app-hero-form>
+<app-hero-form>
+    (heroCreated)="onHeroCreated($event)"
+
+</app-hero-form>
+
+<div class="result">Here the result should show
+    <ul>
+        <li *ngFor="let hero of heroes">{{hero.name}}</li>
+    </ul>
+    
+</div>

@@ -1,10 +1,13 @@
 <div class="form-group">
-    <label for="name">Name</label>
-    <input type="text">
-    <label for="alter-ego">Alter Ego</label>
-    <input type="text">
-    <label for="power">Hero Power</label>
+    <label for="newHeroName">Name</label>
+    <input type="text" [(ngModel)]="newHeroName">
+    <label for="newAlterEgo">Alter Ego</label>
+    <input type="text" [(ngModel)]="newAlterEgo">
+    <label for="newPower">Hero Power</label>
     <select class="form-control" id="power" required>
         <option *ngFor="let pow of powers" [value]="pow">{{pow}}</option>
     </select>
+
+    <button type="button" [disabled]="model.name == 'Iron Man'? true : false"
+    (click)="onCreateHero()">Submit form</button>
 </div>
